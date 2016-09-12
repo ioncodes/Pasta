@@ -30,7 +30,7 @@ Well, how I said, italians are lazy... So why shouldn't we work together? Once t
 Plugins!
 
 # Credits
-[highlight.js](https://github.com/isagalaev/highlight.js/) for the syntrax highlighting!
+[highlight.js](https://github.com/isagalaev/highlight.js/) for the syntax highlighting!
 
 [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) for the nice scrollbar!
 

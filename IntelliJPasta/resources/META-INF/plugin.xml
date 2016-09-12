@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+  <id>com.ioncodes.pasta</id>
+  <name>Pasta</name>
+  <version>0.9</version>
+  <vendor email="ionix@protonmail.com" url="http://www.ioncodes.com">ion</vendor>
+
+  <description><![CDATA[
+      Paste code with a click!
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Works now.
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <group id="IntelliJPasta" text="Pasta" description="Paste like a God">
+      <add-to-group group-id="MainMenu" anchor="last"  />
+      <action id="IntelliJPasta.Pasta" class="Pasta" text="... Copy link" description="Paste the opened document and copy the link" icon="/icons/pasta.png"/>
+      <action id="IntelliJPasta.PastaBrowser" class="PastaBrowser" text="... Open browser" description="Paste the opened document and open the link in the browser" icon="/icons/pasta.png"/>
+      <action id="IntelliJPasta.PastaAndBrowser" class="PastaAndBrowser" text="... Open browser and copy link" description="Paste the opened document, open the link in the browser and copy the link" icon="/icons/pasta.png"/>
+    </group>
+  </actions>
+
+</idea-plugin>

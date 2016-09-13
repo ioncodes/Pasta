@@ -12,6 +12,8 @@ And the cool thing is: The syntax highlight looks as good as true italian spaghe
 
 [C#](http://www.ioncodes.com/Pasta/?paste=32654273857d6bc69523557.68941830)
 
+[C# Long Example](http://www.ioncodes.com/Pasta/?paste=76881064657d7b2acc0c5f5.24051038)
+
 [PHP](http://www.ioncodes.com/Pasta/?paste=4940155457d6bca5afccb4.88722614)
 
 [JavaScript](http://www.ioncodes.com/Pasta/?paste=171146628457d6bddc8d1749.22268356)

@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.ioncodes.pasta</id>
   <name>Pasta</name>
-  <version>0.9</version>
+  <version>0.9.5</version>
   <vendor email="ionix@protonmail.com" url="http://www.ioncodes.com">ion</vendor>
 
   <description><![CDATA[
@@ -9,7 +9,7 @@
     ]]></description>
 
   <change-notes><![CDATA[
-      Works now.
+      Fixed bug which removed everything after a '&' in your code.
     ]]>
   </change-notes>
 

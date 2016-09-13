@@ -30,7 +30,7 @@ public class PastaAndBrowser extends AnAction {
         Project project = ProjectManager.getInstance().getOpenProjects()[0];
         String source = FileEditorManager.getInstance(project).getSelectedTextEditor().getDocument().getText();
         try {
-            String url = Helpers.sendPost("http://www.ioncodes.com/Pasta/create.php?token=" + User.getAccessToken(), "source=" + source);
+            String url = Helpers.sendPost("http://www.ioncodes.com/Pasta/create.php?token=" + User.getAccessToken(), "source=" + source, true);
             StringSelection selection = new StringSelection(url);
             Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
             clipboard.setContents(selection, selection);

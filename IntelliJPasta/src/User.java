@@ -27,7 +27,7 @@ public class User {
         String id = String.format("%064x", new java.math.BigInteger(1, digest));
         String accessToken = null;
         try {
-            accessToken = Helpers.sendPost("http://www.ioncodes.com/Pasta/createtoken.php", "id=" + id);
+            accessToken = Helpers.sendPost("http://www.ioncodes.com/Pasta/createtoken.php", "id=" + id, false);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -8,9 +8,15 @@ import java.net.*;
 /**
  * Created by LucaMarcelli on 12.09.2016.
  */
+
 public class Helpers {
-    public static String sendPost(String url, String post) throws Exception {
-        URL obj = new URL(url.replace('[', ' ').replace(']', ' ').replaceAll("\\s+",""));
+    public static String sendPost(String url, String post, boolean isPaste) throws Exception {
+        if(isPaste) {
+            post = post.replace("&", "{AND}");
+            url = url.replace('[', ' ').replace(']', ' ').replaceAll("\\s+","");
+        }
+
+        URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
         //add request header

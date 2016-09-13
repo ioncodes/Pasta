@@ -12,7 +12,7 @@
 
         $content = file_get_contents($url);
 
-        echo '<pre><code>'.str_replace(array("<", ">"), array("&lt;", "&gt;"), $content).'</code></pre>';
+        echo '<pre><code>'.str_replace(array("<", ">", "{AND}"), array("&lt;", "&gt;", "&amp;"), $content).'</code></pre>';
     ?>
     <!--<script type="application/javascript" src="js/jquery-3.1.0.min.js" ></script>-->
     <script type="application/javascript" src="js/highlight.pack.js" ></script>
